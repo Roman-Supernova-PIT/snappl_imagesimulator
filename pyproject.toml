@@ -17,7 +17,11 @@ classifiers = [
   "Programming Language :: Python"
 ]
 dependencies = [
-  "roman-snpit-snappl>0.48.0"
+  # TODO : make this >0.48.0 (maybe later to be bumped again); right now,
+  #   because of the chicken-and-egg problem in the snappl github workflow,
+  #   we have to have no version here.
+  # "roman-snpit-snappl>0.48.0",
+  "roman-snpit-snappl",
   # Also depends on roman_imsim, but that's not pip
   #   installable in a way that works with PyPi
 ]
