@@ -17,7 +17,7 @@ classifiers = [
   "Programming Language :: Python"
 ]
 dependencies = [
-  "snappl>0.46.0"
+  "roman-snpit-snappl>0.48.0"
   # Also depends on roman_imsim, but that's not pip
   #   installable in a way that works with PyPi
 ]
@@ -75,16 +75,16 @@ include-package-data = true
 [tool.setuptools.packages.find]
 namespaces = false
 include = [
-"snappl_ou2024*"
+"snappl_imagesimulator*"
 ]
 
 [tool.setuptools_scm]
 # can be empty if no extra settings are needed, presence enables setuptools-scm
-version_file = "snappl_ou2024/_version.py"
+version_file = "snappl_imagesimulator/_version.py"
 
 [tool.pytest.ini_options]
 testpaths = [
-  "snappl_ou2024",
+  "snappl_imagesimulator",
   "docs",
 ]
 doctest_plus = "enabled"
@@ -94,20 +94,20 @@ addopts = "--doctest-rst"
 
 [tool.coverage.run]
 omit = [
- "snappl_ou2024/__init*",
- "snappl_ou2024/conftest.py",
- "snappl_ou2024/*setup_package*",
- "snappl_ou2024/tests/*",
- "snappl_ou2024/*/tests/*",
- "snappl_ou2024/extern/*",
- "snappl_ou2024/_version*",
- "*/snappl_ou2024/__init*",
- "*/snappl_ou2024/conftest.py",
- "*/snappl_ou2024/*setup_package*",
- "*/snappl_ou2024/tests/*",
- "*/snappl_ou2024/*/tests/*",
- "*/snappl_ou2024/extern/*",
- "*/snappl_ou2024/_version*",
+ "snappl_imagesimulator/__init*",
+ "snappl_imagesimulator/conftest.py",
+ "snappl_imagesimulator/*setup_package*",
+ "snappl_imagesimulator/tests/*",
+ "snappl_imagesimulator/*/tests/*",
+ "snappl_imagesimulator/extern/*",
+ "snappl_imagesimulator/_version*",
+ "*/snappl_imagesimulator/__init*",
+ "*/snappl_imagesimulator/conftest.py",
+ "*/snappl_imagesimulator/*setup_package*",
+ "*/snappl_imagesimulator/tests/*",
+ "*/snappl_imagesimulator/*/tests/*",
+ "*/snappl_imagesimulator/extern/*",
+ "*/snappl_imagesimulator/_version*",
 ]
 
 [tool.coverage.report]
@@ -167,12 +167,12 @@ select = [ 'F', 'E101', 'E111', 'E112', 'E113', 'E115', 'E117',
 # This can be .rst or .md, towncrier's default template works with both.
 filename = "CHANGES.rst"
 directory = "changes"
-package = "snappl_ou2024"
-package_dir = "snappl_ou2024"
+package = "snappl_imagesimulator"
+package_dir = "snappl_imagesimulator"
 title_format = "{version} ({project_date})"
 ignore = [".gitkeep"]
 wrap = true
-issue_format = "`#{issue} <https://github.com/Roman-Supernova-PIT/snappl_ou2024/issues/{issue}>`_"
+issue_format = "`#{issue} <https://github.com/Roman-Supernova-PIT/snappl_imagesimulator/issues/{issue}>`_"
 
 [[tool.towncrier.type]]
 directory = "/"
@@ -195,8 +195,8 @@ name = "New Features"
 showcontent = true
 
 [[tool.towncrier.type]]
-directory = "snappl_ou2024"
-name = "snappl_ou2024"
+directory = "snappl_imagesimulator"
+name = "snappl_imagesimulator"
 showcontent = true
 
 
