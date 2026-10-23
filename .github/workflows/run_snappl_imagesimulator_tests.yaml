@@ -78,8 +78,7 @@ jobs:
           cd snappl
           git checkout u/rknop/snappl_subpackages
           cd ..
-          git clone
-          https://github.com/Roman-Supernova-PIT/snappl_ou2024.git
+          git clone https://github.com/Roman-Supernova-PIT/snappl_ou2024.git
           cd snappl_ou2024
           git checkout initialize
           cd ..
