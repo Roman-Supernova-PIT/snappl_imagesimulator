@@ -1,0 +1,2 @@
+Create package which has the image simulator from snappl (so that its
+galsim dependence can be pulled out of snappl).
