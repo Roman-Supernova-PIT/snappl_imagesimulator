@@ -5,7 +5,7 @@ import photutils.aperture
 from matplotlib import pyplot
 
 from snappl.utils import env_as_bool
-from snappl.image_simulator import ImageSimulator
+from snappl_imagesimulator.image_simulator import ImageSimulator
 from snappl.image import FITSImageStdHeaders
 
 
