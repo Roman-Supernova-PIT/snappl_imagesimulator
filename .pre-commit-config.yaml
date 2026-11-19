@@ -1,0 +1,23 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-case-conflict
+      - id: trailing-whitespace
+      - id: check-added-large-files
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+      # Ignore the template for checks which will be confused by jinja syntax
+      - id: check-ast
+        exclude: "roman_snappl_imagesimulator"
+      - id: check-yaml
+        exclude: "roman_snappl_imagesimulator"
+      - id: debug-statements
+        exclude: "roman_snappl_imagesimulator"
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.14.3
+    hooks:
+      - id: ruff-check
+        types_or: [ python, pyi ]
+      - id: ruff-format
+        types_or: [ python, pyi ]
